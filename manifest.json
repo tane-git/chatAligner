@@ -5,5 +5,26 @@
     "description": "An Edge Extension to help you chat with AI while keeping alignment.",
     "icons": {
         "128": "icons/detective128.png"
+    },
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "notifications"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "scripts/content.js"
+            ]
+        }
+    ],
+    "background": {
+        "service_worker": "scripts/background.js"
     }
 }

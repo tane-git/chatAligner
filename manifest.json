@@ -1,0 +1,9 @@
+{
+    "name": "chatAligner",
+    "version": "0.0.0.1",
+    "manifest_version": 3,
+    "description": "An Edge Extension to help you chat with AI while keeping alignment.",
+    "icons": {
+        "128": "icons/detective128.png"
+    }
+}
